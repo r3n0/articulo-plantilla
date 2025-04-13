@@ -1,0 +1,52 @@
+% Documento principal en formato APA 7
+\documentclass[12pt, letterpaper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{apacite}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+% Configuración de márgenes según APA 7
+\geometry{
+    left=2.54cm,
+    right=2.54cm,
+    top=2.54cm,
+    bottom=2.54cm
+}
+
+% Configuración de espaciado
+\doublespacing
+
+% Configuración de hipervínculos
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+% Título del documento
+\title{Título del Documento}
+\author{Autor}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% Inclusión de capítulos
+\input{capitulos/introduccion}
+\input{capitulos/metodologia}
+\input{capitulos/resultados}
+\input{capitulos/discusion}
+\input{capitulos/conclusiones}
+
+% Bibliografía
+\bibliographystyle{apacite}
+\bibliography{referencias}
+
+\end{document} 
